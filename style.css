@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+html {
+  font-family: "Ubuntu";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+.nav {
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  list-style-type: none;
+  display: flex;
+  background-color: #080E2C;
+  height: 90px;
+}
+.nav li a {
+  padding: 1rem;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  overflow: hidden;
+  font-size: 1.6rem;
+  font-family: "ubuntu";
+  text-decoration: none;
+  color: #D8E8E4;
+}
+.nav li a:hover {
+  color: #44EABB;
+  transition: all 0.3s ease 0s;
+}
+.nav li a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #44EABB;
+  height: 2px;
+  transition-property: right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.nav li a:hover:before, .nav li a:focus:before, .nav li a:active:before {
+  right: 0;
+}
+
+header div {
+  width: 100%;
+  height: 5px;
+  background-color: #44EABB;
+  box-shadow: 0 1px 11px;
+}
+
+main p {
+  text-align: center;
+  margin-top: 70px;
+  margin-left: 17%;
+  margin-right: 17%;
+  font-size: medium;
+}
+main h2 {
+  font-size: 2rem;
+  margin-top: 70px;
+  text-align: center;
+}
+main .logo {
+  display: block;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 500px;
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blur_content .blur {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+  filter: blur(3px);
+}
+
+.carre {
+  width: 50px;
+  height: 50px;
+  color: rgb(0, 255, 106);
+}
+
+footer .navfooter {
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  list-style-type: none;
+  display: flex;
+  background-color: #080E2C;
+  height: 90px;
+}
+footer .navfooter p {
+  color: #D8E8E4;
+  font-size: 1.4rem;
+}/*# sourceMappingURL=style.css.map */
