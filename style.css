@@ -200,4 +200,31 @@ footer .navfooter {
 footer .navfooter p {
   color: #D8E8E4;
   font-size: 1.4rem;
+}
+
+@media screen and (max-width: 1013px) {
+  .competences {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-left: 15%;
+    margin-right: 10%;
+    gap: 0%;
+  }
+  .competences h3 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-top: 70px;
+    margin-top: 7rem;
+  }
+  .competences-flex {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    display: flex;
+    align-items: center;
+    gap: 3%;
+  }
+  .competences-flex .carres img {
+    margin: 0.1rem;
+    width: 6%;
+  }
 }/*# sourceMappingURL=style.css.map */

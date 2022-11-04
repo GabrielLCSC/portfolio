@@ -107,16 +107,16 @@ main{
     gap: 20%;
     
     
-        h3{
+    h3{
             font-size: 2.2rem;
             font-weight: 400;
             margin-top: 70px;
             
             margin-top: 7rem;
             
-        }
     }
-    
+}
+
 
 
 .competences-flex{
@@ -236,6 +236,49 @@ footer{
             color: #D8E8E4;
             font-size: 1.4rem;
 
+        }
+    }
+    
+}
+// responsive grid competences (enlever le gap20%)
+@media screen and (max-width: 1013px) {
+    
+
+    .competences{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin-left: 15%;
+        margin-right: 10%;
+        gap: 0%;
+        
+        
+        h3{
+                font-size: 2.2rem;
+                font-weight: 400;
+                margin-top: 70px;
+                
+                margin-top: 7rem;
+                
+        }
+    }
+    
+    
+    
+    .competences-flex{
+        margin-top: 7rem;
+        margin-bottom: 7rem;
+        display: flex;
+        align-items: center;
+        gap: 3%;
+    
+        
+        .carres{
+            
+            img{
+                margin: 0.1rem;
+                width: 6%;
+                
+            }
         }
     }
     
