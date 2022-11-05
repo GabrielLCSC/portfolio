@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/a680878469.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
@@ -24,9 +26,9 @@
         <h2>Domaines de compétences</h2>
         <div class="competences">
             <div class="competences_unit">
-                <h3>FRONT END</h3>
+                <h3 data-aos="fade-right">FRONT END</h3>
 
-                <div class="competences-flex">
+                <div data-aos="fade-right" class="competences-flex">
                     <img src="images/html.png" alt="html">
 
                     <div class="carres">
@@ -44,7 +46,7 @@
                     </div>
                     
                 </div>
-                <div class="competences-flex">
+                <div data-aos="fade-right" class="competences-flex">
                     <img src="images/css.png" alt="html">
 
                     <div class="carres">
@@ -70,9 +72,9 @@
                 
             </div>
             <div class="competences_unit">
-                <h3>BACK END</h3>
+                <h3 data-aos="fade-right">BACK END</h3>
 
-                <div class="competences-flex">
+                <div data-aos="fade-right" class="competences-flex">
                     <img src="images/js.png" alt="html">
 
                     <div class="carres">
@@ -90,7 +92,7 @@
                     </div>
                     
                 </div>
-                <div class="competences-flex">
+                <div data-aos="fade-right" class="competences-flex">
                     <img src="images/php.png" alt="html">
 
                     <div class="carres">
@@ -115,13 +117,15 @@
         <div class="background-other">
             <h2>Mes travaux</h2>
                 <div class="uni">
-                    <div class="container">
+                    <div class="container"  data-aos="fade-up"
+                    data-aos-duration="700">
                         <img class="image" src="images/tuileries.png" alt="tuileries">
                         <div class="middle">
                             <p class="work"><a class="select-work" href="https://tuileries.vercel.app/">Les Tuileries</a></p>
                         </div>
                     </div>
-                    <div class="container">
+                    <div class="container" data-aos="fade-up"
+                    data-aos-duration="1500">
                         <img class="image" src="images/portfolio.png" alt="portfolio">
                         <div class="middle">
                             <p class="work"><a class="select-work" href="">Mon portfolio</a></p>
@@ -132,18 +136,24 @@
         </div>
         
         <h2 class="contact">Contact</h2>
-            <div class="blur_content">
-                <img src="images/desk.jpg" alt="bureau" class="blur">
-                
-            </div>
+            
     </main>
     <footer>
-        <div class="navfooter">
-            <p>© Copyright 2022 - Gabriel DAUTREPPE. Tous droits réservés.</p>
-            <p> Mentions légales | Politique de confidentialité</p>
-
+        <div class="blur_content">
+            <div class="content">
+                <li><a href="https://www.linkedin.com/in/gabriel-dautreppe-iim/"><img data-aos="fade-down" data-aos-duration="1300" src="images/linkedin.png" alt=""></a></li>
+                <li><a href="https://github.com/GabrielLCSC"><img data-aos="fade-down" data-aos-duration="1600" src="images/github.png" alt=""></a></li>
+            </div>
+            <div class="img-content">
+                <img class="blur" src="images/desk.jpg" alt="bureau" class="blur">
+            </div>
+            
+            
         </div>
 
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
