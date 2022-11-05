@@ -2,6 +2,7 @@
 html {
   font-family: "Ubuntu";
   color: #20222D;
+  margin: 0;
 }
 
 * {
@@ -68,13 +69,24 @@ header div {
   box-shadow: 0 3px 6px rgb(120, 120, 120);
 }
 
+main .lorem {
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}
+main .blocs {
+  position: absolute;
+  left: 61%;
+  top: 560px;
+  z-index: -1;
+}
 main .bio {
   margin-left: 15%;
   margin-right: 15%;
   border-radius: 12px;
   padding: 2rem;
   background: #ffffff;
-  box-shadow: inset 4px 4px 10px #f3f3f3, inset -4px -4px 10px #f8f8f8;
+  box-shadow: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #f8f8f8;
 }
 main .bio h3 {
   font-size: 1.6rem;
@@ -229,8 +241,10 @@ main .logo {
   transition: all 0.3s ease 0s;
 }
 
-.contact {
+.stick {
   margin-bottom: 10rem;
+  margin-left: 46%;
+  margin-top: 5px;
 }
 
 .blur_content {
@@ -267,10 +281,10 @@ main .logo {
   width: 70%;
 }
 
-@media screen and (max-width: 1013px) {
+@media screen and (max-width: 1015px) {
   .competences {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     margin-left: 15%;
     margin-right: 10%;
     gap: 0%;
@@ -291,5 +305,16 @@ main .logo {
   .competences-flex .carres img {
     margin: 0.1rem;
     width: 6%;
+  }
+  .stick {
+    margin-bottom: 10rem;
+    margin-left: 41%;
+    margin-top: 5px;
+  }
+  main .blocs {
+    position: absolute;
+    left: 70%;
+    top: 560px;
+    z-index: -1;
   }
 }/*# sourceMappingURL=style.css.map */
