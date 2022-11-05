@@ -13,16 +13,20 @@
 <body>
     <header>
         <ul class="nav">
-            <li><a href="#">A PROPOS</a></li>
-            <li><a href="#">TRAVAUX</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="index.html">A PROPOS</a></li>
+            <li><a href="#travaux">TRAVAUX</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
         <div></div>
     </header>
     <main>
-        <img class="logo" src="images/photomoi2.jpg" alt="photo de moi">
-        <h2 class="titre">Front & Back End Developer</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore doloremque ex ea, eaque laborum debitis facere dignissimos tenetur dolorum magnam hic quae consequatur dolor veniam alias animi, maxime nostrum sit.</p>
+        <img data-aos="fade-right" data-aos-duration="2000" class="logo" src="images/photomoi2.jpg" alt="photo de moi">
+        <h2 data-aos="fade-left" data-aos-duration="1000" class="titre">Front & Back End Developer</h2>
+        <div data-aos="fade-left" data-aos-duration="1600" class="bio">
+            <h3>Bienvenue, je suis Gabriel Dautreppe !</h3>
+            <p>Depuis le début de mes études dans le coding, il y a un peu plus d'un an, j'ai toujours été passionné par ce domaine. Avec une préférence pour le front-end, j'ai pu mettre mes capacités au service de plusieurs projets collaboratifs qui m'ont permis d'évoluer aussi bien en autonomie qu'en équipe. Sûr de mes capacités, je demeure curieux et investi et continue d'améliorer mes compétences chaque jour.
+            </p>
+        </div>
         <h2>Domaines de compétences</h2>
         <div class="competences">
             <div class="competences_unit">
@@ -92,7 +96,7 @@
                     </div>
                     
                 </div>
-                <div data-aos="fade-right" class="competences-flex">
+                <div data-aos="fade-right" class="competences-flex1">
                     <img src="images/php.png" alt="html">
 
                     <div class="carres">
@@ -115,7 +119,7 @@
             </div>
         </div>
         <div class="background-other">
-            <h2>Mes travaux</h2>
+            <h2 id="travaux">Mes travaux</h2>
                 <div class="uni">
                     <div class="container"  data-aos="fade-up"
                     data-aos-duration="700">
@@ -135,7 +139,7 @@
                 </div>
         </div>
         
-        <h2 class="contact">Contact</h2>
+        <h2 id="contact" class="contact">Contact</h2>
             
     </main>
     <footer>
