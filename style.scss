@@ -654,7 +654,7 @@ main{
     .competences {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    margin-left: 6%;
+    margin-left: 9%;
     margin-right: 10%;
     gap: 0%;
 }
@@ -697,7 +697,7 @@ main{
         
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-        margin-left: 3%;
+        margin-left: 6.5%;
         margin-right: 15%;
         gap: 0%;
         .container { 
