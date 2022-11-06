@@ -13,10 +13,6 @@ html {
   font-size: 10px;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 header {
   background-color: #080E2C;
   height: 90px;
