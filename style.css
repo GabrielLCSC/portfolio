@@ -3,6 +3,7 @@ html {
   font-family: "Ubuntu";
   color: #20222D;
   margin: 0;
+  overflow-x: hidden;
 }
 
 * {
